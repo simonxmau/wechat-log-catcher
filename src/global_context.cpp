@@ -4,7 +4,8 @@
 
 #include "global_context.h"
 #include "pch.h"
-#include "wechat_log.h"
+#include "wechat_app_log_hook.h"
+#include "wechat_cloud_log_hook.h"
 
 GlobalContext::~GlobalContext() {
 
@@ -12,7 +13,8 @@ GlobalContext::~GlobalContext() {
 
 DWORD WINAPI DllRun(HMODULE hModule) {
     spdlog::debug("DllRun");
-    WechatLog::InstallHook();
+    WechatAppLogHook::install();
+    WechatCloudLogHook::install();
     return 0;
 }
 

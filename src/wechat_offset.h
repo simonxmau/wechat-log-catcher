@@ -1,0 +1,22 @@
+//
+// Created by Simon Mau on 4/14/24.
+//
+
+#ifndef WECHAT_CLOUD_CATCHER_WECHAT_OFFSET_H
+#define WECHAT_CLOUD_CATCHER_WECHAT_OFFSET_H
+
+namespace wechat_offset {
+
+    // 小程序jsApi调用请求
+    const int WX_APPLET_JS_API_CALL_ADDR = 0xFF5CE3;
+    const int WX_APPLET_JS_API_CALL = 0x7887C0;
+    const int WX_APPLET_JS_API_CALL_NEXT_ADDR = WX_APPLET_JS_API_CALL_ADDR + 0x5;
+
+    // 小程序jsApi调用响应
+    const int WX_APPLET_JS_API_CALL_RESPONSE_ADDR = 0xFEA355;
+    const int WX_APPLET_JS_API_CALL_RESPONSE = 0xFFBF70;
+    const int WX_APPLET_JS_API_CALL_RESPONSE_NEXT_ADDR = WX_APPLET_JS_API_CALL_RESPONSE_ADDR + 0x5;
+
+}
+
+#endif //WECHAT_CLOUD_CATCHER_WECHAT_OFFSET_H
