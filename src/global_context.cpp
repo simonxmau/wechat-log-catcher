@@ -27,6 +27,14 @@ void GlobalContext::initialize(HMODULE module) {
     log.emplace();
     log->Initialize();
 
+    // env
+    const char* envPath = getenv("WECHAT_LOG_CATCHER_OUTPUT_PATH");
+    if (envPath == nullptr) {
+        envPath = ".";
+    }
+    std::string logFile = fmt::format("{}/daily.log", envPath);
+    spdlog::info("WECHAT_LOG_CATCHER_OUTPUT_PATH: {}", logFile);
+
     HANDLE mThread = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)DllRun, module, NULL, 0);
     if (mThread != 0) {
         CloseHandle(mThread);
