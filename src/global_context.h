@@ -6,10 +6,6 @@
 #define WECHAT_LOG_CATCHER_GLOBAL_CONTEXT_H
 
 #include "singleton.h"
-// #include "config.h"
-// #include "github_client.h"
-// #include "appinfo.h"
-// #include "wechat_applet.h"
 #include "log.h"
 #include "pch.h"
 
@@ -22,15 +18,6 @@ class GlobalContext: public Singleton<GlobalContext>  {
     ~GlobalContext();
 
 public:
-
-
-    // std::optional<Config> config;
-    //
-    // std::optional<GithubClient> defaultGithubClient;
-    //
-    // std::optional<Appinfo> appinfo;
-    //
-    // std::optional<WechatApplet> wechatApplet;
 
     std::optional<Log> log;
 
