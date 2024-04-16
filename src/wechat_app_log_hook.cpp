@@ -7,7 +7,7 @@
 #include "utils/hook_utils.h"
 #include "pch.h"
 
-DWORD dwHookAppLogAddr = WechatCommon::GetWechatWinBaseAddr() + 0x79192DA9 - 0x78200000;
+DWORD dwHookAppLogAddr = WechatCommon::GetWechatWinBaseAddr() + 0x79192DA9 - 0x78200000; // 0xF92DA9
 DWORD dwAppLogCallAddr = WechatCommon::GetWechatWinBaseAddr() + 0x7A313080 - 0x78200000;
 DWORD dwHookAppLogJumpAddr = dwHookAppLogAddr + 5;
 
