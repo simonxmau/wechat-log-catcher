@@ -2,8 +2,8 @@
 // Created by Simon Mau on 4/13/24.
 //
 
-#ifndef WECHAT_CLOUD_CATCHER_HOOK_UTILS_H
-#define WECHAT_CLOUD_CATCHER_HOOK_UTILS_H
+#ifndef WECHAT_LOG_CATCHER_HOOK_UTILS_H
+#define WECHAT_LOG_CATCHER_HOOK_UTILS_H
 
 #include "../pch.h"
 
@@ -23,4 +23,4 @@ public:
 };
 
 
-#endif //WECHAT_CLOUD_CATCHER_HOOK_UTILS_H
+#endif //WECHAT_LOG_CATCHER_HOOK_UTILS_H

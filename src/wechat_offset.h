@@ -2,8 +2,8 @@
 // Created by Simon Mau on 4/14/24.
 //
 
-#ifndef WECHAT_CLOUD_CATCHER_WECHAT_OFFSET_H
-#define WECHAT_CLOUD_CATCHER_WECHAT_OFFSET_H
+#ifndef WECHAT_LOG_CATCHER_WECHAT_OFFSET_H
+#define WECHAT_LOG_CATCHER_WECHAT_OFFSET_H
 
 namespace wechat_offset {
 
@@ -19,4 +19,4 @@ namespace wechat_offset {
 
 }
 
-#endif //WECHAT_CLOUD_CATCHER_WECHAT_OFFSET_H
+#endif //WECHAT_LOG_CATCHER_WECHAT_OFFSET_H
